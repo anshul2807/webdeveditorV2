@@ -15,7 +15,7 @@ const Navbar = () => {
     try {
       // In a real scenario, this calls your backend API
       const data = await saveProject(files); 
-      setShareLink(`${window.location.origin}/#/view/${data.id || 'temp-id'}`);
+      setShareLink(`${window.location.origin}/webdeveditorV2/#/view/${data.id || 'temp-id'}`);
       setModalOpen(true);
     } catch (err) {
       alert("Failed to generate share link. Check console.");
